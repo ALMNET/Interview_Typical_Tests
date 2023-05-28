@@ -4,58 +4,34 @@ Write a C function to reverse a given string in place. The function should take 
 */
 
 #include <stdio.h>
-#include <stdint.h>
-#include <stdlib.h>
+#include <string.h>
 
+void reverseString(char* str) {
+    int length = strlen(str);
+    int i, j;
+    char temp;
 
-/**
- * Prototypes
-*/
-void stringInverter(char * stringToInvert);
-
-//char * string = "Hello everyone";
-char string[30];
-
-
-int main(){
-
-    uint8_t counter = 0;
-    uint8_t charNumber;
-
-    char * buffer2 = "Holaperra";
-
-
-    stringInverter(buffer2);
-    
-    
-
-    printf("\n\nResult : %s", buffer2);
-
-
-    return -1;
-}
-
-
-void stringInverter(char * stringToInvert)
-{
-    uint8_t charNumber = strlen(stringToInvert);
-    uint8_t counter;
-
-    char * buffer;
-
-    strcpy(buffer, stringToInvert);
-
-    for(counter = 0; counter <= charNumber; counter++)
-        stringToInvert[counter] = buffer[charNumber - counter];
-}
-
-
-/*
-
-invertedString = (char*) malloc (charNumber * sizeof(char));
-
-    for(counter = 1; counter < charNumber; counter++){
-        *invertedString = string[strlen(string) - counter];
-        invertedString++;
+    for (i = 0, j = length - 1; i < j; i++, j--) {
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
     }
-    */
+}
+
+int main() {
+    char str[100];
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    // Remove newline character if present
+    if (str[strlen(str) - 1] == '\n') {
+        str[strlen(str) - 1] = '\0';
+    }
+
+    reverseString(str);
+
+    printf("Reversed string: %s\n", str);
+
+    return 0;
+}

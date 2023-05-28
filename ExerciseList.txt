@@ -1,0 +1,31 @@
+==========================================================================================================================================================
+
+✅ Finished
+
+⚠️ Pending
+
+⏳  In progress
+
+🔨 In Revision
+
+==========================================================================================================================================================
+
+✅ Exercise 1: Write a C function that takes two integers as parameters and returns the sum of their squares.
+
+⏳  Exercise 2: Implement a C program that reads a sequence of integers from the user until they enter a negative number. The program should then compute and print the average of the positive numbers entered.
+
+🔨 Exercise 3: Write a C function to reverse a given string in place. The function should take a string as input and modify it directly.
+
+⚠️ Exercise 4: Implement a C program that reads a text file and counts the occurrences of each word in the file. The program should then print the words along with their frequencies in descending order.
+
+✅ Exercise 5: Write a C function that takes an array of integers and its length as parameters. The function should return the maximum difference between any two elements in the array.
+
+⏳  Exercise 6: Implement a C program that sorts an array of integers using the bubble sort algorithm. The program should take the array and its length as input and modify the array directly.
+
+⚠️ Exercise 7: Write a C function to check if a given string is a palindrome. The function should return 1 if the string is a palindrome and 0 otherwise. Ignore spaces, punctuation, and case sensitivity.
+
+⚠️ Exercise 8: Implement a C program that calculates the factorial of a given non-negative integer using recursion. The program should read the integer from the user and print the factorial.
+
+⚠️ Exercise 9: Write a C function to remove all occurrences of a specific character from a given string. The function should modify the string directly.
+
+⚠️ Exercise 10: Implement a C program that finds the prime numbers within a given range. The program should take the lower and upper bounds as input and print all the prime numbers in that range.
